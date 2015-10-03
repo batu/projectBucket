@@ -48,17 +48,6 @@
 		-webkit-text-size-adjust: none;
 	}
 
-/* Batu Addition */
-.circleBase{
-    overflow: hidden;
-    -webkit-border-radius: 100%;
-    border-radius: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 /* Box Model */
 
@@ -1561,6 +1550,93 @@
 
 	}
 
+
+
+
+
+/* Batu Addition */
+.circleContainer {
+    width:100%;
+
+}
+
+.landingDiv{
+
+}
+
+.left {
+	float: left;
+	margin-left: 22%;
+	margin-top: 3%
+}
+
+.right {
+	float: right;
+	margin-right: 22%;
+	margin-top: 3%
+}
+
+.landingDiv p {
+    text-align: center;
+}
+
+.circleBase{
+	display:inline-block;
+    overflow: hidden;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.height{
+	height: 300px;
+}
+.orangeBorder{
+	 transition:.5s;
+	 border: 0px solid #FF5108;
+}
+
+.orangeBorder:hover{
+	border: 10px solid #FF5108;
+	transition:.5s;
+}
+
+
+.tealBorder{
+	transition:.5s;
+	border: 0px solid #50C0EE;
+}
+
+
+
+.tealBorder:hover{
+	border: 10px solid #50C0EE;
+	transition:.5s;
+
+}
+
+.landingHeader{
+	margin-top: 10%;
+	font-size: 4em;
+	font-weight: 300;
+	line-height: 1.75em;
+	color: ;
+	text-align: center;
+}
+
+.centerText{
+	font-size: 2em;
+	text-align: center;
+}
+
+body.landing {
+	    background: #41484c;
+	}
+
+
 /* Basic */
 
 	body {
@@ -1582,6 +1658,7 @@
 			-ms-animation: none !important;
 			animation: none !important;
 		}
+
 
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
