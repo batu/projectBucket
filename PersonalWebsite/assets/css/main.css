@@ -1555,8 +1555,9 @@
 
 
 /* Batu Addition */
+
 .circleContainer {
-    height: 35%;
+	height: 35%;
     margin: auto;
     position: absolute;
     top: 0;
@@ -1578,6 +1579,7 @@
 .circleBase{
 	display:inline-block;
     overflow: hidden;
+    width: 270px;
     -webkit-border-radius: 100%;
     border-radius: 100%;
     -webkit-background-size: cover;
@@ -1587,7 +1589,8 @@
     background-repeat: no-repeat;
 }
 .height{
-	height: 300px;
+	height: 200px;
+	width: 200px;
 }
 .orangeBorder{
 	 transition:.5s;
@@ -1615,7 +1618,7 @@
 
 .landingHeader{
 	margin-top: 10%;
-	font-size: 4em;
+	font-size: 3em;
 	font-weight: 300;
 	line-height: 1.75em;
 	color: ;
@@ -1638,7 +1641,7 @@ body.landing {
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.75em;
 		color: #888;
 	}
@@ -1728,7 +1731,7 @@ body.landing {
 	}
 
 		a:hover {
-			color: #E27689;
+			color: #50C0EE;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -1788,7 +1791,9 @@ body.landing {
 
 		.image img {
 			display: block;
-			width: 100%;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		.image.avatar48 {
@@ -2169,8 +2174,10 @@ body.landing {
 		}
 
 			#nav ul li a.active span:before {
-				color: #25C8FF;
+				color: #50C0EE;
 			}
+
+
 
 /* Footer */
 
@@ -2211,7 +2218,7 @@ body.landing {
 		#main > section {
 			margin: 0;
 			overflow: hidden;
-			padding: 4em 0;
+			padding: 2em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
 			background-image: url("images/overlay.png");
