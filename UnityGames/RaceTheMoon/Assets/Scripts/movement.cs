@@ -8,6 +8,7 @@ public class movement : MonoBehaviour {
 
 
     public float speed = 50f;
+    public float speedIncrease = 0.001f;
     public float sideSpeed = 75f;
 
     public float rotationAngle = 50f;
@@ -21,6 +22,8 @@ public class movement : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate() {
+        speed += speedIncrease;
+        sideSpeed += speedIncrease * 20;
         if (rb.velocity.magnitude < 10 && Input.GetKeyDown(KeyCode.W)) {
             rb.AddForce(Vector3.forward * speed * 100);
         }
