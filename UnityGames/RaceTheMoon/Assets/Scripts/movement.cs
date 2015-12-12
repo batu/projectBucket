@@ -6,18 +6,50 @@ public class movement : MonoBehaviour {
     [HideInInspector]
     public Rigidbody rb;
 
+    
 
     public float speed = 50f;
     public float speedIncrease = 0.001f;
     public float sideSpeed = 75f;
 
+    public float crashTreshold = 50f;
+
+
+
     public float rotationAngle = 50f;
     public float rotationSpeed = 0.1f;
+
+    public GameObject explosion;
+
+    camera CameraScript;
+    worldBuilder worldBuilderScript;
 
 
     // Use this for initialization
     void Start() {
         rb = GetComponent<Rigidbody>();
+        
+        CameraScript = GameObject.Find("GameManager").GetComponent<camera>();
+        worldBuilderScript = GameObject.Find("GameManager").GetComponent<worldBuilder>();
+    }
+
+
+    void OnCollisionEnter(Collision collision) {
+
+
+        if (collision.impulse.z > crashTreshold) {
+
+
+            CameraScript.enabled = false;
+            worldBuilderScript.enabled = false;
+
+            Instantiate(explosion, new Vector3(gameObject.transform.position.x,
+                                    gameObject.transform.position.y,
+                                    gameObject.transform.position.z), Quaternion.identity);
+            Destroy(gameObject);
+
+        }
+
     }
 
     // Update is called once per frame

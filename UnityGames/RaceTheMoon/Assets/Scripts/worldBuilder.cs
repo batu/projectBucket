@@ -63,7 +63,7 @@ public class worldBuilder : MonoBehaviour {
             createRandomRoadTile();
             tileCounter++;
             lastKnownPlayerPosition = player.transform.position.z;
-            Debug.Log(playerRB.velocity.magnitude);
+
         }
     }
 
