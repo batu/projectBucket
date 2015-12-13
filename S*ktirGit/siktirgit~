@@ -1,5 +1,0 @@
-git pull;
-git add -A;
-git commit -m "Siktir git has been run, carefull with this!"
-git push;
-echo "Ne var ne yok yolladım. Bol şans."
