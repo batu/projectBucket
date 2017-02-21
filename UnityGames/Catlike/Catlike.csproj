@@ -75,9 +75,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ColorChanger.cs" />
     <Compile Include="Assets\Curves\Scripts\Line.cs" />
     <Compile Include="Assets\FPSAtom\Scripts\Nucleon.cs" />
     <Compile Include="Assets\FPSAtom\Scripts\NucleonSpawner.cs" />
+    <Compile Include="Assets\Loops.cs" />
     <Compile Include="Assets\Needle\Scrıpts\Deadzone.cs" />
     <Compile Include="Assets\Needle\Scrıpts\LineCaster.cs" />
     <Compile Include="Assets\Needle\Scrıpts\NeedleGenerator.cs" />

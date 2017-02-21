@@ -28,6 +28,10 @@ public class Stats : MonoBehaviour {
         menu_stats.SetActive(false);
     }
 	
+    public void Record() {
+
+    }
+
     public void Increment() {
         string button = EventSystem.current.currentSelectedGameObject.name;
         if (PlayerPrefs.HasKey(button)) {
